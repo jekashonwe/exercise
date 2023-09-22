@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    background-color:azure;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.loading {
+    height: 0;
+    width: 0;
+    padding: 15px;
+    border: 6px solid #ccc;
+    border-right-color: #888;
+    border-radius: 22px;
+    -webkit-animation: rotate 1s infinite linear;
+    /* left, top and position just for the demo! */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    
+  }
+  
+  @-webkit-keyframes rotate {
+    /* 100% keyframe for  clockwise. 
+       use 0% instead for anticlockwise */
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+
+.cover-image{
+    width: 120px;
+    height: 180px;
+    border-radius: 5px;
+}
+.container-footer{
+    max-width: 1170px;
+    
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style:none;
+}
+.footer{
+    background-color:black;
+    padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    color: white;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 300;
+    color:gray;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: white;
+    margin-left: 8px;
+}
+
+.footer-col h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 300;
+    color:gray;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col h5:hover{
+    color: white;
+    margin-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color:#24262b;
+    background-color: white;
+}
+/* to make the page responsive */
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px){
+    .footer-col{
+        width: 100%;
+    }
+}
+.copyrights{
+    color: bisque;
+    padding: 30px;
+}
